@@ -12,7 +12,7 @@ articleTitles.forEach(title => {
     // Find the iframe within the article
     const iframe = title.parentNode.querySelector('.telegraph-container iframe');
 
-    // Update the iframe's src attribute with the Telegraph URL
-    iframe.src = telegraphUrl; 
+    // Update the iframe's src attribute with the Telegraph URL (using proxy)
+    iframe.src = http://localhost:3000/telegraph/${telegraphUrl}; 
   });
 });
