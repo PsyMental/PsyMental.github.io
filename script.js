@@ -1,18 +1,13 @@
-// Add an event listener to each article title
-const articleTitles = document.querySelectorAll('.title');
+// You'll need to replace this with your actual web scraping code
+function getTelegraphArticle(url) {
+    // 1. Implement web scraping using a library like Cheerio:
+    //    - Fetch the HTML content from the Telegraph link.
+    //    - Use Cheerio to parse the HTML and extract the title and description.
+    // 2. Set the extracted data in the HTML elements:
+    //    - document.getElementById("article-title").textContent = title;
+    //    - document.getElementById("article-description").textContent = description;
+}
 
-articleTitles.forEach(title => {
-  title.addEventListener('click', (event) => {
-    // Prevent the default link behavior (opening in a new tab)
-    event.preventDefault();
-
-    // Get the Telegraph URL from the title's href attribute
-    const telegraphUrl = title.getAttribute('href');
-
-    // Find the iframe within the article
-    const iframe = title.parentNode.querySelector('.telegraph-container iframe');
-
-    // Update the iframe's src attribute with the Telegraph URL (using proxy)
-    iframe.src = http://localhost:3000/telegraph/${telegraphUrl}; 
-  });
-});
+// Call the function with your Telegraph link
+const telegraphLink = "https://telegra.ph/Group-RulesMT-02-03";
+getTelegraphArticle(telegraphLink);
